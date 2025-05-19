@@ -2,85 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Basic Calculator</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Header Section -->
-  <header>
-    <div class="container">
-      <h1>Soumadwip Ghara</h1>
-      <p>Web Developer | Designer | Coder</p>
-    </div>
-  </header>
+  <div class="calculator">
+    <input type="text" id="display" disabled />
+    <div class="buttons">
+      <button class="btn" onclick="clearDisplay()">C</button>
+      <button class="btn" onclick="deleteLast()">DEL</button>
+      <button class="btn" onclick="appendValue('%')">%</button>
+      <button class="btn" onclick="appendValue('/')">/</button>
 
-  <!-- About Section -->
-  <section class="about">
-    <div class="container">
-      <img src="C:\Users\SOUMYA GHORA\OneDrive\Pictures\WhatsApp Image 2025-05-12 at 12.52.04_0f1df447.jpg" alt="My Photo" />
-      <div>
-        <h2>About Me</h2>
-        <p>Hello! I'm a passionate web developer with experience in HTML, CSS, and JavaScript. I enjoy turning complex problems into simple, beautiful, and intuitive designs.</p>
-      </div>
-    </div>
-  </section>
+      <button class="btn" onclick="appendValue('7')">7</button>
+      <button class="btn" onclick="appendValue('8')">8</button>
+      <button class="btn" onclick="appendValue('9')">9</button>
+      <button class="btn" onclick="appendValue('*')">*</button>
 
-  <!-- Skills Section -->
-  <section class="skills">
-    <div class="container">
-      <h2>My Skills</h2>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>Responsive Design</li>
-        <li>Git & GitHub</li>
-      </ul>
-    </div>
-  </section>
+      <button class="btn" onclick="appendValue('4')">4</button>
+      <button class="btn" onclick="appendValue('5')">5</button>
+      <button class="btn" onclick="appendValue('6')">6</button>
+      <button class="btn" onclick="appendValue('-')">-</button>
 
-  <!-- Projects Section -->
-  <section class="projects">
-    <div class="container">
-      <h2>My Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <img src="project1.jpg" alt="Project 1" />
-          <h3>Portfolio Website</h3>
-          <p>A responsive personal portfolio site built with HTML, CSS, and JS.</p>
-        </div>
-        <div class="project-card">
-          <img src="project2.jpg" alt="Project 2" />
-          <h3>Landing Page</h3>
-          <p>A clean, modern landing page for a startup idea using flexbox layout.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+      <button class="btn" onclick="appendValue('1')">1</button>
+      <button class="btn" onclick="appendValue('2')">2</button>
+      <button class="btn" onclick="appendValue('3')">3</button>
+      <button class="btn" onclick="appendValue('+')">+</button>
 
-  <!-- Resume Section -->
-  <section class="resume">
-    <div class="container">
-      <h2>Resume</h2>
-      <a href="resume.pdf" download class="btn">Download My Resume (PDF)</a>
+      <button class="btn" onclick="appendValue('0')">0</button>
+      <button class="btn" onclick="appendValue('.')">.</button>
+      <button class="btn equal" onclick="calculate()">=</button>
     </div>
-  </section>
+  </div>
 
-  <!-- Contact Section -->
-  <section class="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: soumadwipghara12@gmail.com</p>
-      <p>Phone: +91 7364099615</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Soumadwip Ghara. All rights reserved.</p>
-    </div>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
